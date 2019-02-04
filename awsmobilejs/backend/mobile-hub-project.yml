@@ -1,5 +1,13 @@
 --- !com.amazonaws.mobilehub.v0.Project 
 features:
+  bots: !com.amazonaws.mobilehub.v0.Bots 
+    components:
+      BookTrip: !com.amazonaws.mobilehub.v0.Bot 
+        attributes:
+          childDirected: false
+          description: Bot to make reservations for a visit to a city.
+          existing: false
+          template: bot-trips
   content-delivery: !com.amazonaws.mobilehub.v0.ContentDelivery 
     attributes:
       enabled: true
